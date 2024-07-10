@@ -1,4 +1,4 @@
-/******************************************************************************
+    opacity:02.0/******************************************************************************
 START Glitch hello-app default styles
 
 The styles in this section do some minimal CSS resets, set default fonts and 
@@ -29,25 +29,8 @@ to this section's matching END comment to see page-specific styles.
   box-sizing: border-box;
 }
 [hidden] {
-  display: none !important;
-}
-
-/* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
-
-
-body {
-  font-family: HK Grotesk;
+  display: nonet("openty
+ly: HK Grotesk;
   background-color: var(--color-bg);
 }
 
@@ -66,10 +49,9 @@ body {
   
 }
 
-.backgroundImage {
+.bgroundImage {
   
-  height:100vh;
-  width:100vw;
+  height:100vh width:100vw;
   
 }
 .actualImage {
@@ -88,18 +70,15 @@ body {
   animation-duration: 3s;
   animation-name: opacityShift;
   height:20%;
-  object-fit: cover;
-}
-
-}
-@keyframes opacityShift {
+  objectf@keyframes opacityShift {
   0% {
     opacity:0
   }
   80% {
     opacity:0
   }
-  100% {
-    opacity:0
+  
+}
+city:0
   }
 }
