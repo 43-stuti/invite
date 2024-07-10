@@ -63,15 +63,18 @@ body {
   align-items: center;
   justify-content: center;
   margin-right: auto;
+  
 }
 
 .backgroundImage {
-   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
   height:100vh;
   width:100vw;
+  
+}
+.actualImage {
+  height:100%;
+  width: 100%;
   background-image: url("https://cdn.glitch.global/e130db6f-7bf6-48e6-bb35-2b4447a81c58/knot.png?v=1720594805703");
   background-repeat:no-repeat;
   background-size:cover;
@@ -84,7 +87,7 @@ body {
   margin-top: var(--image-margin);
   animation-duration: 3s;
   animation-name: opacityShift;
-  height:30px;
+  height:20%;
   object-fit: cover;
 }
 
@@ -97,6 +100,6 @@ body {
     opacity:0
   }
   100% {
-    opacity:1
+    opacity:0
   }
 }
