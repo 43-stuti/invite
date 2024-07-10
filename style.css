@@ -21,6 +21,7 @@ body {
   height:100vh;
   width:100vw;
   
+  
 }
 .actualImage {
   background-image: url("https://cdn.glitch.global/e130db6f-7bf6-48e6-bb35-2b4447a81c58/knot.png?v=1720594805703");
@@ -29,21 +30,27 @@ body {
   background-position:center;
   height:100%;
   width:100%;
+   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .startText {
   display:flex;
   justify-content:space-between;
+  
 }
 .knotknot {
   display:flex;
   justify-content:space-between;
   flex-direction:column;
+  height:60vh;
 }
 .whosethere {
   display:flex;
   justify-content:space-between;
   flex-direction:column;
+  height:40vh;
 }
 .illustration {
   animation-duration: 3s;
@@ -51,9 +58,24 @@ body {
   height:30%;
 }
 
-.textknock {
-  width:40%;
+
+
+.textknock1 {
+  width:60%;
+  animation-duration: 1s;
+  animation-name: knock;
 }
+.textknock2 {
+  width:60%;
+}
+
+.whosethere1 {
+  width:50%;
+}
+.whosethere2 {
+  width:50%;
+} 
+
 @keyframes opacityShift {
   0% {
     opacity:0;
@@ -63,5 +85,17 @@ body {
   }
   100% {
     opacity:0;
+  }
+}
+
+@keyframes knock {
+  0% {
+    width:10%;
+  }
+  20% {
+    width:30;
+  }
+  40% {
+    width:10%;
   }
 }
