@@ -1,33 +1,4 @@
-    opacity:02.0/******************************************************************************
-START Glitch hello-app default styles
 
-The styles in this section do some minimal CSS resets, set default fonts and 
-colors, and handle the layout for our footer and "Remix on Glitch" button. If
-you're new to CSS they may seem a little complicated, but you can scroll down
-to this section's matching END comment to see page-specific styles.
-******************************************************************************/
-
-
-/* 
-  The style rules specify elements by type and by attributes such as class and ID
-  Each section indicates an element or elements, then lists the style properties to apply
-  See if you can cross-reference the rules in this file with the elements in index.html
-*/
-
-/* Our default values set as CSS variables */
-:root {
-  --color-bg: #b80b5b;
-  --color-text-main: #000000;
-  --color-primary: #FFFF00;
-  --wrapper-height: 87vh;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
-}
-
-/* Basic page style resets */
-* {
-  box-sizing: border-box;
-}
 
 body {
   background-color: #b80b5b;
@@ -53,8 +24,6 @@ body {
   
 }
 .actualImage {
-  height:100%;
-  width: 100%;
   background-image: url('https://cdn.glitch.global/e130db6f-7bf6-48e6-bb35-2b4447a81c58/knot.png?v=1720594805703');
   background-repeat:no-repeat;
   background-size:cover;
@@ -63,7 +32,6 @@ body {
 .knokknock {
   display:flex;
   justify-content:space-between;
-  flex-direction:column;
 }
 /* Very light scaling for our illustration */
 .illustration {
@@ -75,8 +43,7 @@ body {
 }
 
 .textknock {
-  height:30%;
-  margin-left:20px;
+  width:50%
 }
 @keyframes opacityShift {
   0% {
