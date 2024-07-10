@@ -70,7 +70,8 @@ body {
   height:30%;
 }
 .textknock {
-  height:10%;
+  height:30%;
+  margin-left:20px;
 }
 @keyframes opacityShift {
   0% {
