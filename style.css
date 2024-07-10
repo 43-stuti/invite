@@ -76,16 +76,16 @@ body {
 .whosethere1 {
   width:50%;
   animation-fill-mode: forwards;
-  animation-duration: 1.5s;
-  animation-delay:0.3s;
+  animation-duration: 2s;
+  animation-delay:3s;
   animation-name: whosethere;
   opacity:0;
 }
 .whosethere2 {
   width:50%;
   animation-fill-mode: forwards;
-  animation-duration: 1.5s;
-  animation-delay:0.3s;
+  animation-duration: 2s;
+  animation-delay:3s;
   animation-name: whosethere;
   opacity:0;
 } 
@@ -134,16 +134,6 @@ body {
   0% {
     opacity:1;
     margin-right: -100vw;
-  }
-  20% {
-     opacity:1;
-     margin-right: -60vw;
-    
-  }
-  40% {
-     opacity:1;
-     margin-right: -10vw;
-    
   }
   100% {
      opacity:1;
