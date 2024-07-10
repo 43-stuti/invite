@@ -31,11 +31,20 @@ body {
   width:100%;
 }
 
-. {
+.startText {
   display:flex;
   justify-content:space-between;
 }
-
+.knotknot {
+  display:flex;
+  justify-content:space-between;
+  flex-direction:column;
+}
+.whosethere {
+  display:flex;
+  justify-content:space-between;
+  flex-direction:column;
+}
 .illustration {
   animation-duration: 3s;
   animation-name: opacityShift;
@@ -43,7 +52,7 @@ body {
 }
 
 .textknock {
-  width:30%;
+  width:40%;
 }
 @keyframes opacityShift {
   0% {
