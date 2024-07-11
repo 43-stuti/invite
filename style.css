@@ -21,8 +21,9 @@ body {
   height:100vh;
   width:100vw;
   animation-name: screenEntry;
-  animation-duration: 1.5s;
-  animation-delay:0.3s;
+  animation-duration: 0.5s;
+  animation-delay:4s;
+  animation-fill-mode: forwards;
   
 }
 .actualImage {
@@ -146,10 +147,9 @@ body {
 @keyframes screenEntry {
   0% {
     opacity:1;
-    transform: translateX(100px);
   }
   100% {
-     opacity:1;
-     transform: translateX(0px);
+     opacity:0;
+     display: none
  }
 }
