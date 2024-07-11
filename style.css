@@ -20,7 +20,9 @@ body {
 .bgroundImage {
   height:100vh;
   width:100vw;
-  
+  animation-name: screenEntry;
+  animation-duration: 1.5s;
+  animation-delay:0.3s;
   
 }
 .actualImage {
@@ -30,7 +32,7 @@ body {
   background-position:center;
   height:100%;
   width:100%;
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -42,8 +44,8 @@ body {
 }
 .knotknot {
   display:flex;
-  justify-content:space-between;
   flex-direction:column;
+  gap:70px;
   height:60vh;
 }
 .whosethere {
@@ -62,30 +64,31 @@ body {
 
 .textknock1 {
   width:80%;
-  animation-dealy:0.2s;
   animation-duration: 1.5s;
   animation-name: knock;
+  animation-fill-mode: forwards;
 }
 .textknock2 {
   width:60%;
   animation-duration: 1.5s;
   animation-delay:0.3s;
   animation-name: knock;
+  animation-fill-mode: forwards;
 }
 
 .whosethere1 {
   width:50%;
   animation-fill-mode: forwards;
-  animation-duration: 2s;
-  animation-delay:3s;
+  animation-duration: 1.5s;
+  animation-delay:2s;
   animation-name: whosethere;
   opacity:0;
 }
 .whosethere2 {
   width:50%;
   animation-fill-mode: forwards;
-  animation-duration: 2s;
-  animation-delay:3s;
+  animation-duration: 1.5s;
+  animation-delay:2s;
   animation-name: whosethere;
   opacity:0;
 } 
@@ -132,11 +135,21 @@ body {
 }
 @keyframes whosethere {
   0% {
-    opacity:1;
-    margin-right: -100vw;
+    opacity:0;
+    transform: translateX(100px);
   }
   100% {
      opacity:1;
-      margin-right: 40px;
+     transform: translateX(0px);
+ }
+}
+@keyframes screenEntry {
+  0% {
+    opacity:1;
+    transform: translateX(100px);
+  }
+  100% {
+     opacity:1;
+     transform: translateX(0px);
  }
 }
