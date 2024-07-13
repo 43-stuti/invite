@@ -20,9 +20,8 @@ body {
 .bgroundImage {
   height:100vh;
   width:100vw;
-  animation-name: screenEntry;
   animation-duration: 0.5s;
-  animation-delay:8s;
+  animation-delay:20s;
   animation-fill-mode: forwards;
   
 }
@@ -153,7 +152,7 @@ body {
 
 .ansText {
   display:flex;
-  justify-content:space-between;
+  justify-content:flex-end;
   animation-name: screenFlex;
   animation-duration: 0.5s;
   animation-delay:3.5s;
