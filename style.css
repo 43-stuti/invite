@@ -175,6 +175,10 @@ body {
   width:90%;
   margin-top:20px;
   max-width:200px;
+  cursor:pointer;
+}
+.rsvp:hover {
+  box-shadow: rgba(245, 115, 176, 0.2) 0px 7px 29px 0px;
 }
 /** THIS IS ALL THE ANIMATION **/
 .bgroundImage {
