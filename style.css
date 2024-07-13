@@ -21,7 +21,21 @@ body {
 
 /** FINAL CONTENT **/
 .itinerary {
-  
+  background-position:center;
+  height:100%;
+  width:100%;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top:30px;
+  background-color: #e4d3f2;
+}
+.hideModal {
+  display:none
+}
+.itineraryImage {
+  width:80%
 }
 .mainContentWrapper {
   height:50vh;
@@ -34,7 +48,6 @@ body {
   height:100%;
   width:100%;
   display: flex;
-  flex-direction:column;
   justify-content: center;
   align-items: center;
   animation-name: screenFlex;
@@ -202,7 +215,6 @@ body {
 }
 .rsvp:hover {
   box-shadow: rgba(245, 115, 176, 0.2) 0px 7px 29px 0px;
-  width:90%;
 }
 
 /** THIS IS ALL THE ANIMATION **/
