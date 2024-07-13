@@ -59,6 +59,7 @@ body {
   gap:70px;
   height:60vh;
   max-width:200px;
+  
 }
 .loveforyouContainer {
   display:flex;
@@ -70,9 +71,33 @@ body {
 }
 
 .wedTextForContent {
-  width: 90%;
-  animation-duration: 1.5s;
+  width: 110%;
+  animation-name: wedContentAnimation;
+  animation-duration: 1s;
+  animation-delay:8s;
 }
+
+@keyframes wedContentAnimation {
+   0% {
+    opacity: 0;
+    width:110%;
+  }
+  25% {
+    opacity: 1;
+    width:70%;
+  }
+  50% {
+    opacity: 1;
+    width:140%;
+    
+ }
+  100% {
+    opacity: 1;
+    width:110%
+    
+ }
+}
+
 .stutiContent {
   width:50%;
   animation-name: stutiRotate;
