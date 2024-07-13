@@ -22,7 +22,7 @@ body {
   width:100vw;
   animation-name: screenEntry;
   animation-duration: 0.5s;
-  animation-delay:7s;
+  animation-delay:8s;
   animation-fill-mode: forwards;
   
 }
@@ -207,7 +207,7 @@ body {
 }
 
 .wedgText {
-  width:50%;
+  width:40%;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   animation-delay:2s;
@@ -217,8 +217,9 @@ body {
   animation-duration: 0.5s;
   animation-delay:6s;
 }
+
 .whoText {
-  width:50%;
+  width:40%;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   animation-delay:2s;
