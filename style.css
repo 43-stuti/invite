@@ -56,7 +56,6 @@ body {
 .wedHeading {
   display:flex;
   flex-direction:column;
-  gap:70px;
   height:60vh;
   max-width:200px;
   
@@ -69,18 +68,23 @@ body {
   margin-right:40px;
   max-width:400px;
 }
-
+.wedTextForContentContainer {
+  @media (min-width: 30em) {
+  /* … */
+  }
+  min-height: 150px;
+}
 .wedTextForContent {
-  width: 110%;
+  width: 90%;
   animation-name: wedContentAnimation;
   animation-duration: 1s;
-  animation-delay:8s;
+  animation-delay:7.5s;
 }
 
 @keyframes wedContentAnimation {
    0% {
     opacity: 0;
-    width:110%;
+    width:90%;
   }
   25% {
     opacity: 1;
@@ -93,7 +97,7 @@ body {
  }
   100% {
     opacity: 1;
-    width:110%
+    width:90%
     
  }
 }
