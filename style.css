@@ -59,7 +59,7 @@ body {
 }
 .loveforyouContainer {
   display:flex;
-  gap:30px;
+  gap:10px;
   flex-direction:column;
   height:40vh;
   margin-right:40px;
@@ -81,15 +81,21 @@ body {
 .forForYouText {
   width: 90%;
   animation-fill-mode: forwards;
-  animation-delay: 6s;
-  align-self:flex-end;
+  align-self:flex-start;
 }
 
-.comeToText {
-  width: 20%;
-  animation-delay: 6.5s;
-  align-self:flex-end;
+.toWeddingContainer {
+  align-self:flex-start;
 } 
+.comeToText {
+  width: 40%;
+}
+.weddingText {
+  width:50%;
+}
+.infoBox {
+  width: 70vw;
+}
 /** THIS IS ALL THE ANIMATION **/
 .bgroundImage {
   height:100vh;
