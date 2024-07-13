@@ -23,7 +23,7 @@ body {
 .itinerary {
   background-position:center;
   height:100%;
-  width:100%;
+  width:80vw;
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -40,6 +40,7 @@ body {
   padding-left:10px;
   align-self:flex-end;
   width: 48px;
+  cursor:pointer;
 }
 .closeIcon {
   width:70%
@@ -47,7 +48,7 @@ body {
 .itineraryImage {
   width:50%;
     @media (max-width: 800px) {
-     width:80%;
+     width:100%;
   }
 }
 .mainContentWrapper {

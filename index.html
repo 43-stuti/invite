@@ -26,7 +26,7 @@
       function handleOnClickModal() {
         const modal = document.getElementById("modal");
         if(modal) {
-          modal.classList.remove("hideModal");
+          modal.classList.add("hideModal");
         }
       }
     </script>
@@ -197,6 +197,7 @@
         <div class="itinerary hideModal" id="modal">
           <div class="closeModal">
             <img
+              onclick="handleOnClickModal()"
             src="https://cdn.glitch.global/b33706dc-1e73-49b9-b385-e1ea042dc397/error.png?v=1720913279024"
             class="closeIcon"
             id="modalClose"
