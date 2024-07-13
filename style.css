@@ -162,13 +162,13 @@ body {
 }
 
 .textknock1 {
-  width:80%;
+  width:100%;
   animation-duration: 1.5s;
   animation-name: knock;
   animation-fill-mode: forwards;
 }
 .textknock2 {
-  width:60%;
+  width:100%;
   animation-duration: 1.5s;
   animation-delay:0.3s;
   animation-name: knock;
@@ -182,6 +182,7 @@ body {
   animation-delay:2s;
   animation-name: whosethere;
   opacity:0;
+  align-self:flex-end;
 }
 .whosethere2 {
   width:50%;
@@ -190,6 +191,7 @@ body {
   animation-delay:2s;
   animation-name: whosethere;
   opacity:0;
+  align-self:flex-end;
 }
 
 @keyframes opacityShift {
