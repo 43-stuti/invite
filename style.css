@@ -215,7 +215,7 @@ body {
   opacity:0;
   animation-name: wedTextAnimation;
   animation-duration: 0.5s;
-  animation-delay:4.5s;
+  animation-delay:6s;
 }
 .whoText {
   width:50%;
@@ -226,7 +226,7 @@ body {
   opacity:0;
   animation-name: wedTextAnimation;
   animation-duration: 0.5s;
-  animation-delay:5s;
+  animation-delay:6.5s;
 } 
 
 
