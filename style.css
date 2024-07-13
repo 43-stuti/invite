@@ -156,9 +156,10 @@ body {
   justify-content:space-between;
   animation-name: screenEntry;
   animation-duration: 0.5s;
-  animation-delay:3.5s;
+  animation-delay:4s;
   animation-fill-mode: forwards;
-  display: none;
+  position: absolute;
+  visibility: hidden;
   
 }
 .wed {
@@ -181,7 +182,7 @@ body {
   animation-fill-mode: forwards;
 }
 
-.whosethere1 {
+.wedgText {
   width:50%;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
@@ -189,7 +190,7 @@ body {
   animation-name: whosethere;
   opacity:0;
 }
-.whosethere2 {
+.whoText {
   width:50%;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
@@ -199,3 +200,12 @@ body {
 } 
 
 
+@keyframes screenFlex {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+    visibility: visible
+ }
+}
