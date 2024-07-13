@@ -109,12 +109,40 @@ body {
 .stutiContent {
   width:50%;
   animation-name: stutiRotateContent;
+  transform: rotate(-10deg);
   margin-left:-10px;
+  animation-duration: 1s;
+  animation-delay:10.5s;
   
 }
 .manishContent {
-  animation-name: stutiRotateContent;
+  animation-name: manishRotateContent;
+  animation-duration: 1s;
+  animation-delay:10.5s;
   width: 50%;
+   transform: rotate(10deg);
+}
+@keyframes stutiRotateContent {
+  0% {
+    transform: rotate(-10deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  100% {
+     transform: rotate(-10deg);
+  }
+}
+@keyframes manishRotateContent {
+  0% {
+    transform: rotate(10deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  100% {
+     transform: rotate(10deg);
+  }
 }
 .forForYouText {
   width: 100%;
