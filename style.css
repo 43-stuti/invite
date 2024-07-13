@@ -186,22 +186,29 @@ body {
   animation-delay:3.5s;
 }
 .sm {
-  display:flex;
-  gap:3px;
-  flex-direction:column;
-  margin-left:-40px;
 }
 .stuti {
-  width:40%;
+  width:15vw;
   transform: rotate(30deg);
-  margin
+  position:absolute;
+  animation-name: stutiRotate;
+  animation-duration: 0.5s;
+  animation-delay:3.5s;
+  margin-top:30px;
+  animation-iteration-count: 4;
+  animation-fill-mode: forwards;
+  
 }
 .manish {
-  width:40%;
+   width:15vw;
+  position:absolute;
    animation-name: manishRotate;
   animation-duration: 0.5s;
   animation-delay:3.5s;
-  transform: rotate(30deg);
+  transform: rotate(10deg);
+  animation-iteration-count: 4;
+  margin-left:-30px;
+  animation-fill-mode: forwards;
 }
 
 .wedgText {
@@ -233,11 +240,31 @@ body {
 }
 @keyframes manishRotate {
   0% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(15deg);
+ }
+  60% {
+    transform: rotate(10deg);
+  }
+  100% {
+     transform: rotate(15deg);
+  }
+}
+@keyframes stutiRotate {
+  0% {
+    transform: rotate(45deg);
+  }
+  30% {
+    transform: rotate(50deg);
+ }
+  60% {
     transform: rotate(45deg);
   }
   100% {
-    transform: rotate(40deg);
- }
+     transform: rotate(50deg);
+  }
 }
 
 @keyframes wedTextAnimation {
