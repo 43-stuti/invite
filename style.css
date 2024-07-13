@@ -177,16 +177,18 @@ body {
 }
 
 .wedText {
-  width:90%;
+  width: 90%;
   animation-duration: 1.5s;
   animation-name: knock;
   animation-fill-mode: forwards;
-   animation-name: wedTextAnimation;
+  animation-name: wedTextAnimation;
   animation-duration: 0.5s;
-  animation-delay:3.5s;
+  animation-delay: 3.5s;
 }
+
 .sm {
 }
+
 .stuti {
   width:15vw;
   animation-name: stutiRotate;
@@ -197,49 +199,51 @@ body {
   margin-left:-10px;
   
 }
+
 .manish {
-   width:15vw;
-   animation-name: manishRotate;
+  width: 15vw;
+  animation-name: manishRotate;
   animation-duration: 0.5s;
-  animation-delay:3.5s;
+  animation-delay: 3.5s;
   animation-iteration-count: 6;
   animation-fill-mode: forwards;
 }
 
 .wedgText {
-  width:40%;
+  width: 40%;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
-  animation-delay:2s;
+  animation-delay: 2s;
   animation-name: whosethere;
-  opacity:0;
+  opacity: 0;
   animation-name: wedTextAnimation;
   animation-duration: 0.5s;
-  animation-delay:6s;
+  animation-delay: 6s;
 }
 
 .whoText {
-  width:40%;
+  width: 40%;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
-  animation-delay:2s;
+  animation-delay: 2s;
   animation-name: whosethere;
-  opacity:0;
+  opacity: 0;
   animation-name: wedTextAnimation;
   animation-duration: 0.5s;
-  animation-delay:6.5s;
+  animation-delay: 6.5s;
 } 
 
 
 @keyframes screenFlex {
   0% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
     visibility: visible
  }
 }
+
 @keyframes manishRotate {
   0% {
     transform: rotate(-5deg);
@@ -248,6 +252,7 @@ body {
      transform: rotate(5deg);
   }
 }
+
 @keyframes stutiRotate {
   0% {
     transform: rotate(5deg);
@@ -259,11 +264,11 @@ body {
 
 @keyframes wedTextAnimation {
   0% {
-    opacity:0;
-    width:10%
+    opacity: 0;
+    width: 10%
   }
   100% {
-    opacity:1;
+    opacity: 1;
     width: 80%
  }
 }
