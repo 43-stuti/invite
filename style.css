@@ -215,8 +215,8 @@ body {
   cursor:pointer;
 }
 .eventDetails {
-  width:80%;
-  max-width:120px;
+  width:100%;
+  max-width:130px;
   cursor:pointer;
 }
 .toIndia {
@@ -257,7 +257,8 @@ body {
   animation-duration: 0.5s;
   animation-delay:3.5s;
   animation-fill-mode: forwards;
-   padding:40px;
+  padding:40px;
+  overflow-y: hidden;
   
 }
 .knotknot {
