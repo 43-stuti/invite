@@ -185,6 +185,24 @@ body {
   animation-duration: 0.5s;
   animation-delay:3.5s;
 }
+.sm {
+  display:flex;
+  gap:3px;
+  flex-direction:column;
+  margin-left:-40px;
+}
+.stuti {
+  width:40%;
+  transform: rotate(30deg);
+  margin
+}
+.manish {
+  width:40%;
+   animation-name: manishRotate;
+  animation-duration: 0.5s;
+  animation-delay:3.5s;
+  transform: rotate(30deg);
+}
 
 .wedgText {
   width:50%;
@@ -211,6 +229,14 @@ body {
   100% {
     opacity:1;
     visibility: visible
+ }
+}
+@keyframes manishRotate {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(40deg);
  }
 }
 
