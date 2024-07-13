@@ -154,9 +154,9 @@ body {
 .ansText {
   display:flex;
   justify-content:space-between;
-  animation-name: screenEntry;
+  animation-name: screenFlex;
   animation-duration: 0.5s;
-  animation-delay:4s;
+  animation-delay:3.5s;
   animation-fill-mode: forwards;
   position: absolute;
   visibility: hidden;
@@ -167,6 +167,7 @@ body {
   flex-direction:column;
   gap:70px;
   height:60vh;
+ 
 }
 .wedwho {
   display:flex;
@@ -176,10 +177,13 @@ body {
 }
 
 .wedText {
-  width:80%;
+  width:90%;
   animation-duration: 1.5s;
   animation-name: knock;
   animation-fill-mode: forwards;
+   animation-name: wedTextAnimation;
+  animation-duration: 0.5s;
+  animation-delay:3.5s;
 }
 
 .wedgText {
@@ -207,5 +211,16 @@ body {
   100% {
     opacity:1;
     visibility: visible
+ }
+}
+
+@keyframes wedTextAnimation {
+  0% {
+    opacity:0;
+    width:10%
+  }
+  100% {
+    opacity:1;
+    width: 80%
  }
 }
