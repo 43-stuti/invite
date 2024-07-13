@@ -2,7 +2,7 @@
 const btn = document.querySelector("rsvp"); 
 const modalClose = document.querySelector("modalClose"); 
 const modal = document.querySelector("modal");
-
+console.log(`HEHHEHE`,btn)
 if (btn) { 
   btn.onclick = function () {
    console.log(`RSVVPPPP`)
