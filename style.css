@@ -171,7 +171,7 @@ body {
 }
 .wedwho {
   display:flex;
-  justify-content:space-between;
+  gap:30px;
   flex-direction:column;
   height:40vh;
 }
@@ -190,7 +190,7 @@ body {
 }
 
 .stuti {
-  width:15vw;
+  width:40%;
   animation-name: stutiRotate;
   animation-duration: 0.5s;
   animation-delay:3.5s;
@@ -201,7 +201,7 @@ body {
 }
 
 .manish {
-  width: 15vw;
+  width: 40%;
   animation-name: manishRotate;
   animation-duration: 0.5s;
   animation-delay: 3.5s;
