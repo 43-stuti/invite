@@ -29,9 +29,57 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+}
+.mainContentText {
+  display:flex;
+  animation-name: screenFlex;
+  animation-duration: 0.5s;
+  animation-delay:3.5s;
+  animation-fill-mode: forwards;
+  position: absolute;
+  visibility: hidden;
+  padding:40px;
+}
+.wedHeading {
+  display:flex;
+  flex-direction:column;
+  gap:70px;
+  height:60vh;
+}
+.loveforyouContainer {
+  display:flex;
+  gap:30px;
+  flex-direction:column;
+  height:40vh;
+  margin-right:40px;
 }
 
+.wedTextForContent {
+  width: 90%;
+  animation-duration: 1.5s;
+}
+.stutiContent {
+  width:50%;
+  animation-name: stutiRotate;
+  margin-left:-10px;
+  
+}
+.manishContent {
+  width: 50%;
+}
+.forForYouText {
+  width: 20%;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+  align-self:flex-end;
+}
+
+.comeToText {
+  width: 20%;
+  animation-delay: 6.5s;
+  align-self:flex-end;
+} 
+/** THIS IS ALL THE ANIMATION **/
 .bgroundImage {
   height:100vh;
   width:100vw;
@@ -195,15 +243,12 @@ body {
 .wedText {
   width: 90%;
   animation-duration: 1.5s;
-  animation-name: knock;
   animation-fill-mode: forwards;
   animation-name: wedTextAnimation;
   animation-duration: 0.5s;
   animation-delay: 3.5s;
 }
 
-.sm {
-}
 
 .stuti {
   width:50%;
@@ -226,9 +271,6 @@ body {
 .wedgText {
   width: 20%;
   animation-fill-mode: forwards;
-  animation-duration: 1.5s;
-  animation-delay: 2s;
-  animation-name: whosethere;
   opacity: 0;
   animation-name: wedWhoTextAnimation;
   animation-duration: 0.5s;
@@ -239,9 +281,6 @@ body {
 .whoText {
   width: 20%;
   animation-fill-mode: forwards;
-  animation-duration: 1.5s;
-  animation-delay: 2s;
-  animation-name: whosethere;
   opacity: 0;
   animation-name: wedWhoTextAnimation;
   animation-duration: 0.5s;
