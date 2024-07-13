@@ -69,10 +69,14 @@ body {
   max-width:400px;
 }
 .wedTextForContentContainer {
-  @media (min-width: 30em) {
-  /* … */
+   min-height: 150px;
+  @media (max-width: 800px) {
+    min-height: 100px;
   }
-  min-height: 150px;
+  @media (max-width: 800px) {
+    min-height: 100px;
+  }
+ 
 }
 .wedTextForContent {
   width: 90%;
@@ -104,11 +108,12 @@ body {
 
 .stutiContent {
   width:50%;
-  animation-name: stutiRotate;
+  animation-name: stutiRotateContent;
   margin-left:-10px;
   
 }
 .manishContent {
+  animation-name: stutiRotateContent;
   width: 50%;
 }
 .forForYouText {
