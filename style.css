@@ -97,7 +97,12 @@ body {
 }
 
 .imgInfo {
-  width:90%
+  width:90%;
+  margin-top:20px;
+}
+.rsvp {
+  width:90%;
+  margin-top:20px;
 }
 /** THIS IS ALL THE ANIMATION **/
 .bgroundImage {
