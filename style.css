@@ -210,29 +210,28 @@ body {
 }
 
 .wedgText {
-  width: 40%;
+  width: 20%;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   animation-delay: 2s;
   animation-name: whosethere;
   opacity: 0;
-  animation-name: wedTextAnimation;
+  animation-name: wedWhoTextAnimation;
   animation-duration: 0.5s;
   animation-delay: 6s;
 }
 
 .whoText {
-  width: 40%;
+  width: 20%;
   animation-fill-mode: forwards;
   animation-duration: 1.5s;
   animation-delay: 2s;
   animation-name: whosethere;
   opacity: 0;
-  animation-name: wedTextAnimation;
+  animation-name: wedWhoTextAnimation;
   animation-duration: 0.5s;
   animation-delay: 6.5s;
 } 
-
 
 @keyframes screenFlex {
   0% {
@@ -270,5 +269,16 @@ body {
   100% {
     opacity: 1;
     width: 80%
+ }
+}
+
+@keyframes wedWhoTextAnimation {
+  0% {
+    opacity: 0;
+    width: 10%
+  }
+  100% {
+    opacity: 1;
+    width: 30%
  }
 }
