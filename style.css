@@ -95,10 +95,16 @@ body {
 .weddingText {
   width:50%;
 }
-
+.imgInfoBox {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .imgInfo {
   width:90%;
   margin-top:20px;
+  max-width:400px;
 }
 .rsvp {
   width:90%;
