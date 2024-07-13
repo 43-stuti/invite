@@ -23,6 +23,8 @@ body {
 .mainContentWrapper {
   height:100vh;
   width:100vw;
+  padding:40px;
+  
 }
 .mainContent {
   background-position:center;
@@ -61,7 +63,7 @@ body {
   display:flex;
   gap:10px;
   flex-direction:column;
-  height:40vh;
+  height:70vh;
   margin-right:40px;
 }
 
@@ -79,7 +81,7 @@ body {
   width: 50%;
 }
 .forForYouText {
-  width: 90%;
+  width: 100%;
   animation-fill-mode: forwards;
   align-self:flex-start;
 }
@@ -93,8 +95,9 @@ body {
 .weddingText {
   width:50%;
 }
-.infoBox {
-  width: 70vw;
+
+.imgInfo {
+  width:90%
 }
 /** THIS IS ALL THE ANIMATION **/
 .bgroundImage {
