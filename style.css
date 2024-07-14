@@ -443,7 +443,9 @@ body {
   animation-delay: 6.5s;
   align-self:flex-end;
 } 
-
+.hideAnimation {
+  display:none;
+}
 @keyframes screenFlex {
   0% {
     opacity: 0;

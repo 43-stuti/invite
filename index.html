@@ -29,6 +29,16 @@
           modal.classList.add("hideModal");
         }
       }
+      window.addEventListener("load", (event) => {
+        const playedAni = localStorage.getItem("playedAni");
+        const numberPlayedAni = parseInt(playedAni);
+        console.log(`HEHHEHE`,playedAni,numberPlayedAni)
+        if(playedAni >= 1) {
+          const animationElement = document.getElementById("animation");
+          //animationElement.classList.add("hideAnimation")
+        }
+        localStorage.setItem("playedAni", "1");
+      });
     </script>
   </head>
   <body>
@@ -39,7 +49,7 @@
     -->
     <div class="wrapper">
       <div class="content" role="main">
-        <div class="bgroundImage">
+        <div id="animation" class="bgroundImage">
           <div class="actualImage">
             <div class="startText">
               <div class="knotknot">
@@ -167,22 +177,24 @@
                       class="imgInfo"
                       title="Click the image!"
                     />
-                    
-                    <img
-                      src="https://cdn.glitch.global/b33706dc-1e73-49b9-b385-e1ea042dc397/RSVP.png?v=1720908586503"
-                      class="rsvp"
-                      onclick="handleOnClick()"
-                      alt="Editor illustration"
-                      title="RSVP RSVP!"
-                    />
+                    <a
+                      href="https://docs.google.com/forms/d/1zzP5j_9FQM9iwk3cXTPytedf-53yvTdDqDJFBsVVAI8/"
+                    >
+                      <img
+                        src="https://cdn.glitch.global/b33706dc-1e73-49b9-b385-e1ea042dc397/RSVP.png?v=1720908586503"
+                        class="rsvp"
+                        alt="Editor illustration"
+                        title="RSVP RSVP!"
+                      />
+                    </a>
                     <div class="footers">
-                     
-                        <img
-                              class="eventDetails"
-                          src="https://cdn.glitch.global/b33706dc-1e73-49b9-b385-e1ea042dc397/eventdeeta.png?v=1720908587375"
-                          alt="Editor illustration"
-                          title="Event itinerary"
-                        />
+                      <img
+                        class="eventDetails"
+                        onclick="handleOnClick()"
+                        src="https://cdn.glitch.global/b33706dc-1e73-49b9-b385-e1ea042dc397/eventdeeta.png?v=1720908587375"
+                        alt="Editor illustration"
+                        title="Event itinerary"
+                      />
 
                       <img
                         src="https://cdn.glitch.global/b33706dc-1e73-49b9-b385-e1ea042dc397/todiindia.png?v=1720908586953"
