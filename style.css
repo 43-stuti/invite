@@ -1,4 +1,8 @@
-
+:root {
+  --duration: 8s;
+  --wedDuration:7.5s;
+  --peopleDuration:10.5s;
+}
 
 body {
   background-color: #b80b5b;
@@ -66,7 +70,7 @@ body {
   align-items: center;
   animation-name: screenFlex;
   animation-duration: 0.01s;
-  animation-delay:8s;
+  animation-delay:var(--duration);
   animation-fill-mode: forwards;
   position: absolute;
   visibility: hidden;
@@ -119,7 +123,7 @@ body {
   width: 90%;
   animation-name: wedContentAnimation;
   animation-duration: 1s;
-  animation-delay:7.5s;
+  animation-delay:var(--wedDuration);
 }
 
 @keyframes wedContentAnimation {
@@ -149,13 +153,13 @@ body {
   transform: rotate(-10deg);
   margin-left:-10px;
   animation-duration: 1s;
-  animation-delay:10.5s;
+  animation-delay:var(--peopleDuration);
   
 }
 .manishContent {
   animation-name: manishRotateContent;
   animation-duration: 1s;
-  animation-delay:10.5s;
+  animation-delay:var(--peopleDuration);
   width: 50%;
    transform: rotate(10deg);
 }
@@ -444,7 +448,7 @@ body {
   align-self:flex-end;
 } 
 .hideAnimation {
-  display:none;
+  display:none
 }
 @keyframes screenFlex {
   0% {

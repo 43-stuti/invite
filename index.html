@@ -32,10 +32,14 @@
       window.addEventListener("load", (event) => {
         const playedAni = localStorage.getItem("playedAni");
         const numberPlayedAni = parseInt(playedAni);
-        console.log(`HEHHEHE`,playedAni,numberPlayedAni)
+        var r = document.querySelector(':root');
+        var rs = getComputedStyle(r);
         if(playedAni >= 1) {
           const animationElement = document.getElementById("animation");
-          //animationElement.classList.add("hideAnimation")
+          r.style.setProperty('--duration', '0s');
+          r.style.setProperty('--wedDuration', '0.5s');
+          r.style.setProperty('--blue', 'lightblue');
+          animationElement.classList.add("hideAnimation")
         }
         localStorage.setItem("playedAni", "1");
       });
