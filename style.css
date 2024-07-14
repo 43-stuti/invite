@@ -1,11 +1,12 @@
 :root {
-  --duration: 8s;
-  --wedDuration:7.5s;
+  --duration: 7.6s;
+  --wedDuration:6.9s;
   --peopleDuration:10.5s;
 }
 
 body {
   background-color: #b80b5b;
+  overflow: hidden;
 }
 /* Page structure */
 .wrapper {
@@ -55,11 +56,26 @@ body {
      width:100%;
   }
 }
+.finalContent {
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+
+  animation-name: unhide;
+  animation-duration: 0.01s;
+  animation-delay:var(--duration);
+  animation-fill-mode: forwards;
+}
+@keyframes unhide {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
 .mainContentWrapper {
-  height:50vh;
-  width:100vw;
   padding: 20px 40px 0px 40px;
-  
 }
 .mainContent {
   background-position:center;
@@ -68,12 +84,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation-name: screenFlex;
-  animation-duration: 0.01s;
-  animation-delay:var(--duration);
-  animation-fill-mode: forwards;
-  position: absolute;
-  visibility: hidden;
 }
 .mainContentText {
   display:flex;
@@ -122,7 +132,7 @@ body {
 .wedTextForContent {
   width: 90%;
   animation-name: wedContentAnimation;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-delay:var(--wedDuration);
 }
 
@@ -243,22 +253,27 @@ body {
 .bgroundImage {
   height:100vh;
   width:100vw;
-  animation-duration: 0.01s;
-  animation-name:screenEntry;
-  animation-delay:8s;
-  animation-fill-mode: forwards;
   
 }
-.actualImage {
+.imageBackgroundClass {
   background-image: url("https://cdn.glitch.global/e130db6f-7bf6-48e6-bb35-2b4447a81c58/knot.png?v=1720594805703");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
+  animation-duration: 0.053s;
+  animation-name:removeImage;
+  animation-delay:6.89s;
+  animation-fill-mode: forwards;
+}
+.actualImage {
+ 
   height:100%;
   width:100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
+ 
 }
 
 .startText {
@@ -279,6 +294,7 @@ body {
   height:60vh;
   max-width:200px;
 }
+
 .whosethere {
   display:flex;
   flex-direction:column;
@@ -370,20 +386,28 @@ body {
      transform: translateX(0px);
  }
 }
+
+
+
+@keyframes removeImage {
+  to {
+    background-image: none;
+  }
+}
+
 @keyframes screenEntry {
   0% {
     opacity:1;
   }
   100% {
      opacity:0;
-     display: none
  }
 }
 
 .ansText {
   display:flex;
-  animation-name: screenFlex;
-  animation-duration: 0.5s;
+  animation-name: screenComeGo;
+  animation-duration: 3.622s;
   animation-delay:3.5s;
   animation-fill-mode: forwards;
   position: absolute;
@@ -461,12 +485,34 @@ body {
   0% {
     opacity: 0;
   }
-  100% {
+  33% {
     opacity: 1;
     visibility: visible
  }
 }
 
+@keyframes screenComeGo {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  5% {
+    opacity: 1;
+    visibility: visible
+  }
+  90% {
+    opacity: 1;
+    visibility: visible
+  }
+  93% {
+    opacity: 1;
+    visibility: visible
+  }
+ 100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @keyframes manishRotate {
   0% {
     transform: rotate(0deg);
