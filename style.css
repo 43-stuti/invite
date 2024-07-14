@@ -219,13 +219,13 @@ body {
   cursor:pointer;
 }
 .eventDetails {
-  width:100%;
-  max-width:130px;
+  width:90%;
+  max-width:120px;
   cursor:pointer;
 }
 .toIndia {
-  width:80%;
-  max-width:120px;
+  width:100%;
+  max-width:130px;
   cursor:pointer;
 }
 .rsvp:hover {

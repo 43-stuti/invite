@@ -32,14 +32,14 @@
       window.addEventListener("load", (event) => {
         const playedAni = localStorage.getItem("playedAni");
         const numberPlayedAni = parseInt(playedAni);
-        var r = document.querySelector(':root');
+        var r = document.querySelector(":root");
         var rs = getComputedStyle(r);
-        if(playedAni >= 1) {
+        if (playedAni >= 1) {
           const animationElement = document.getElementById("animation");
-          r.style.setProperty('--duration', '0s');
-          r.style.setProperty('--wedDuration', '0.5s');
-          r.style.setProperty('--blue', 'lightblue');
-          animationElement.classList.add("hideAnimation")
+          r.style.setProperty("--duration", "0s");
+          r.style.setProperty("--wedDuration", "0s");
+          r.style.setProperty("--peopleDuration", "3s");
+          animationElement.classList.add("hideAnimation");
         }
         localStorage.setItem("playedAni", "1");
       });
@@ -199,13 +199,16 @@
                         alt="Editor illustration"
                         title="Event itinerary"
                       />
-
-                      <img
-                        src="https://cdn.glitch.global/b33706dc-1e73-49b9-b385-e1ea042dc397/todiindia.png?v=1720908586953"
-                        class="toIndia"
-                        alt="Editor illustration"
-                        title="What to do in India"
-                      />
+                      <a
+                        href="https://docs.google.com/document/d/1Mjz-lF3KkZshqncyOb98PAVywsECz6zpaVtZrPXgH0M"
+                      >
+                        <img
+                          src="https://cdn.glitch.global/b33706dc-1e73-49b9-b385-e1ea042dc397/todiindia.png?v=1720908586953"
+                          class="toIndia"
+                          alt="Editor illustration"
+                          title="What to do in India"
+                        />
+                      </a>
                     </div>
                   </div>
                 </div>
